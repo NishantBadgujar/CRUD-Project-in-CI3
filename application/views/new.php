@@ -14,22 +14,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       padding: 0;
       position: relative;
       min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    /* Background container with local image */
-    .bg-image {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      overflow: hidden;
-    }
-    .bg-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  
     .form-container {
       max-width: 450px;
       margin: 50px auto;
@@ -41,12 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </style>
 </head>
 <body>
-  <!-- Background Image Container -->
-  <div class="bg-image">
-    <!-- Make sure this image exists in your project directory or update the path accordingly -->
-    <img src="<?php echo base_url('assets/images/employee-bg.jpg'); ?>" alt="Employee Background">
-  </div>
-  
+
   <div class="container">
     <div class="form-container">
       <h3 class="text-center mb-4">Create Employee</h3>
@@ -73,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </form>
     </div>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
